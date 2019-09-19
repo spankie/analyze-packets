@@ -31,5 +31,7 @@ func FindDevices() {
 }
 
 func main() {
-	FindDevices()
+	// FindDevices()
+	// LiveCapture()
+	LiveCaptureWithFilter()
 }
