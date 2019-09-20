@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	device       string = "en0" // eth0
+	device       string = "eth0" // en0
 	snapshot_len int32  = 1024
 	promiscuous  bool   = false
 	err          error
