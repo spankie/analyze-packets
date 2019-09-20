@@ -108,6 +108,8 @@ func printPacketInfo(packet gopacket.Packet) {
 	if udpLayer != nil {
 		fmt.Println("UDP layer detected.")
 		udp, _ := udpLayer.(*layers.UDP)
+		fmt.Printf("%v\n%s\n=================================\n", udp.LayerContents(), udp.LayerContents())
+		fmt.Printf("%v\n%s", udp.LayerPayload(), udp.LayerPayload())
 		fmt.Printf("From port %d to %d\n", udp.SrcPort, udp.DstPort)
 		// fmt.Println("Sequence number: ", udp.)
 		fmt.Println()
