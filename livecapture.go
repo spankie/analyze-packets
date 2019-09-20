@@ -57,6 +57,7 @@ func LiveCaptureWithFilter() {
 		// Do something with a packet here.
 		// fmt.Println(packet)
 		printPacketInfo(packet)
+		DecodePackets(packet.Data())
 	}
 }
 
